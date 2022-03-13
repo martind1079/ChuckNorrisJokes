@@ -13,6 +13,10 @@
 		82B890D527DE648300DB9E46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B890D427DE648300DB9E46 /* Preview Assets.xcassets */; };
 		82B890FF27DE752800DB9E46 /* APIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B890FE27DE752800DB9E46 /* APIResponseModel.swift */; };
 		82B8910127DE753F00DB9E46 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B8910027DE753F00DB9E46 /* Joke.swift */; };
+		82B8910427DE7C3B00DB9E46 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B8910327DE7C3B00DB9E46 /* APIService.swift */; };
+		82B8910627DE7C4500DB9E46 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B8910527DE7C4500DB9E46 /* APIError.swift */; };
+		82B8910827DE7C6100DB9E46 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B8910727DE7C6100DB9E46 /* APIClient.swift */; };
+		82B8910B27DE7FD100DB9E46 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B8910A27DE7FD100DB9E46 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 		82B890DA27DE648300DB9E46 /* ChuckJokesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuckJokesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B890FE27DE752800DB9E46 /* APIResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseModel.swift; sourceTree = "<group>"; };
 		82B8910027DE753F00DB9E46 /* Joke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		82B8910327DE7C3B00DB9E46 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		82B8910527DE7C4500DB9E46 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		82B8910727DE7C6100DB9E46 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		82B8910A27DE7FD100DB9E46 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,7 @@
 		82B890CC27DE648100DB9E46 /* ChuckJokes */ = {
 			isa = PBXGroup;
 			children = (
+				82B8910927DE7FB400DB9E46 /* Configuration */,
 				82B890FD27DE74C900DB9E46 /* Models */,
 				82B890F827DE741800DB9E46 /* Networking */,
 				82B890F727DE740300DB9E46 /* UI */,
@@ -115,6 +124,8 @@
 		82B890F827DE741800DB9E46 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				82B8910527DE7C4500DB9E46 /* APIError.swift */,
+				82B8910727DE7C6100DB9E46 /* APIClient.swift */,
 				82B8910227DE75FD00DB9E46 /* protocols */,
 			);
 			path = Networking;
@@ -160,8 +171,17 @@
 		82B8910227DE75FD00DB9E46 /* protocols */ = {
 			isa = PBXGroup;
 			children = (
+				82B8910327DE7C3B00DB9E46 /* APIService.swift */,
 			);
 			path = protocols;
+			sourceTree = "<group>";
+		};
+		82B8910927DE7FB400DB9E46 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				82B8910A27DE7FD100DB9E46 /* Environment.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +285,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				82B890D027DE648100DB9E46 /* ContentView.swift in Sources */,
+				82B8910B27DE7FD100DB9E46 /* Environment.swift in Sources */,
+				82B8910827DE7C6100DB9E46 /* APIClient.swift in Sources */,
+				82B8910427DE7C3B00DB9E46 /* APIService.swift in Sources */,
 				82B890FF27DE752800DB9E46 /* APIResponseModel.swift in Sources */,
 				82B8910127DE753F00DB9E46 /* Joke.swift in Sources */,
 				82B890CE27DE648100DB9E46 /* ChuckJokesApp.swift in Sources */,
+				82B8910627DE7C4500DB9E46 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
