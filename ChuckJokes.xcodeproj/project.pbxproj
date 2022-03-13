@@ -17,6 +17,8 @@
 		82B8910627DE7C4500DB9E46 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B8910527DE7C4500DB9E46 /* APIError.swift */; };
 		82B8910827DE7C6100DB9E46 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B8910727DE7C6100DB9E46 /* APIClient.swift */; };
 		82B8910B27DE7FD100DB9E46 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B8910A27DE7FD100DB9E46 /* Environment.swift */; };
+		82B8910D27DE868C00DB9E46 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B8910C27DE868C00DB9E46 /* RootViewModel.swift */; };
+		82B8910F27DE86A000DB9E46 /* JokesListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B8910E27DE86A000DB9E46 /* JokesListState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		82B8910527DE7C4500DB9E46 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		82B8910727DE7C6100DB9E46 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		82B8910A27DE7FD100DB9E46 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		82B8910C27DE868C00DB9E46 /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		82B8910E27DE86A000DB9E46 /* JokesListState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokesListState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 		82B890FC27DE74A700DB9E46 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				82B8910C27DE868C00DB9E46 /* RootViewModel.swift */,
+				82B8910E27DE86A000DB9E46 /* JokesListState.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -284,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82B8910F27DE86A000DB9E46 /* JokesListState.swift in Sources */,
 				82B890D027DE648100DB9E46 /* ContentView.swift in Sources */,
 				82B8910B27DE7FD100DB9E46 /* Environment.swift in Sources */,
 				82B8910827DE7C6100DB9E46 /* APIClient.swift in Sources */,
@@ -291,6 +298,7 @@
 				82B890FF27DE752800DB9E46 /* APIResponseModel.swift in Sources */,
 				82B8910127DE753F00DB9E46 /* Joke.swift in Sources */,
 				82B890CE27DE648100DB9E46 /* ChuckJokesApp.swift in Sources */,
+				82B8910D27DE868C00DB9E46 /* RootViewModel.swift in Sources */,
 				82B8910627DE7C4500DB9E46 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
