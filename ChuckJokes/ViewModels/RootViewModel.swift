@@ -13,20 +13,23 @@ final class RootViewModel: ObservableObject {
     
     @Published var state : JokesListState = .empty
     
-    @Published var  errorMessage : String = "" 
+    @Published var  errorMessage : String = "" {
+        didSet {
+            hasError = errorMessage != ""
+        }
+    }
+    
+    @Published var hasError : Bool = false
 
     
     private (set) var apiService : APIService
     
     var subscriptions : Set<AnyCancellable> = []
     
-    @Published var jokes : [Joke] = []
+    @Published var jokes : [JokeViewModel] = []
     
     init(apiService: APIService) {
- 
         self.apiService = apiService
-        fetchJokes()
-        
     }
     
     func fetchJokes() {
@@ -50,7 +53,9 @@ final class RootViewModel: ObservableObject {
                 
             }, receiveValue: { [weak self] jokes in
                 
-                self?.jokes = jokes
+                self?.jokes = jokes.map({
+                    JokeViewModel(joke: $0)
+                })
                 self?.state = .presenting
                 
             }).store(in: &subscriptions)

@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct ChuckJokesApp: App {
+struct ChuckNorrisJokesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let apiService = APIClient()
+            let viewModel = RootViewModel(apiService: apiService)
+            RootView(viewModel: viewModel)
         }
     }
 }

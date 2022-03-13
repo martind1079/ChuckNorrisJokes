@@ -13,7 +13,7 @@ class APIClient : APIService {
     func fetchJokes() -> AnyPublisher<[Joke], ApiError> {
         
         return URLSession.shared.dataTaskPublisher(for: Environment.jokesURL)
-            .retry(1)
+            .delay(for: 0.5, scheduler: DispatchQueue.main)
             .tryMap({
                 data, response -> [Joke] in
                 guard  let response = response as? HTTPURLResponse,
