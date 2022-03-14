@@ -21,11 +21,10 @@ struct RootView: View {
                 
               EmptyListView(viewModel: viewModel)
                 
-            case .fetching:
+            case .fetchNew:
                 
                FetchingListView()
                     
-                
             case .presenting:
                 
                 JokesListView(viewModel: viewModel)

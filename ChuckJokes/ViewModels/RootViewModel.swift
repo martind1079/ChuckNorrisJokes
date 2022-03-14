@@ -11,7 +11,11 @@ import Combine
 
 final class RootViewModel: ObservableObject {
     
-    @Published var state : JokesListState = .empty
+    @Published var state : JokesListState = .empty {
+        didSet {
+            stateChangedCallback?(self)
+        }
+    }
     
     @Published var  errorMessage : String = "" {
         didSet {
@@ -26,6 +30,8 @@ final class RootViewModel: ObservableObject {
     
     var subscriptions : Set<AnyCancellable> = []
     
+    var stateChangedCallback: ((RootViewModel) -> Void)?
+    
     @Published var jokes : [JokeViewModel] = []
     
     init(apiService: APIService) {
@@ -34,7 +40,9 @@ final class RootViewModel: ObservableObject {
     
     func fetchJokes() {
         errorMessage = ""
-        state = .fetching
+        if state == .empty {
+            state = .fetchNew
+        }
         apiService.fetchJokes()
             .sink(receiveCompletion: {
                 
@@ -56,7 +64,9 @@ final class RootViewModel: ObservableObject {
                 self?.jokes = jokes.map({
                     JokeViewModel(joke: $0)
                 })
-                self?.state = .presenting
+                if self?.state == .fetchNew {
+                    self?.state = .presenting
+                }
                 
             }).store(in: &subscriptions)
     }

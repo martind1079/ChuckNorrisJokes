@@ -24,6 +24,17 @@
 		82B8911827DE8A0A00DB9E46 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B8911327DE8A0900DB9E46 /* EmptyListView.swift */; };
 		82B8911927DE8A0A00DB9E46 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B8911427DE8A0A00DB9E46 /* ActivityIndicator.swift */; };
 		82B8911B27DE8A2900DB9E46 /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B8911A27DE8A2900DB9E46 /* JokeViewModel.swift */; };
+		82D6EAAE27DF9A8A00BD138E /* Jokes.json in Resources */ = {isa = PBXBuildFile; fileRef = 82D6EAAC27DF9A8A00BD138E /* Jokes.json */; };
+		82D6EAAF27DF9A8A00BD138E /* TwoExplicitJokes.json in Resources */ = {isa = PBXBuildFile; fileRef = 82D6EAAD27DF9A8A00BD138E /* TwoExplicitJokes.json */; };
+		82D6EAB227DF9A9700BD138E /* RootViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D6EAB027DF9A9700BD138E /* RootViewModelTests.swift */; };
+		82D6EAB327DF9A9700BD138E /* JokeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D6EAB127DF9A9700BD138E /* JokeViewModelTests.swift */; };
+		82D6EAB527DF9A9F00BD138E /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D6EAB427DF9A9F00BD138E /* APITests.swift */; };
+		82D6EAB927DF9AA800BD138E /* FetchingListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D6EAB627DF9AA800BD138E /* FetchingListViewTests.swift */; };
+		82D6EABA27DF9AA800BD138E /* RootViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D6EAB727DF9AA800BD138E /* RootViewTests.swift */; };
+		82D6EABB27DF9AA800BD138E /* EmptyListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D6EAB827DF9AA800BD138E /* EmptyListViewTests.swift */; };
+		82D6EAC127DF9B8400BD138E /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 82D6EAC027DF9B8400BD138E /* ViewInspector */; };
+		82D6EACB27DF9E2F00BD138E /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 82D6EACA27DF9E2F00BD138E /* OHHTTPStubs */; };
+		82D6EACD27DF9E2F00BD138E /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 82D6EACC27DF9E2F00BD138E /* OHHTTPStubsSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +67,14 @@
 		82B8911327DE8A0900DB9E46 /* EmptyListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
 		82B8911427DE8A0A00DB9E46 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		82B8911A27DE8A2900DB9E46 /* JokeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeViewModel.swift; sourceTree = "<group>"; };
+		82D6EAAC27DF9A8A00BD138E /* Jokes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Jokes.json; sourceTree = "<group>"; };
+		82D6EAAD27DF9A8A00BD138E /* TwoExplicitJokes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwoExplicitJokes.json; sourceTree = "<group>"; };
+		82D6EAB027DF9A9700BD138E /* RootViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModelTests.swift; sourceTree = "<group>"; };
+		82D6EAB127DF9A9700BD138E /* JokeViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeViewModelTests.swift; sourceTree = "<group>"; };
+		82D6EAB427DF9A9F00BD138E /* APITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
+		82D6EAB627DF9AA800BD138E /* FetchingListViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchingListViewTests.swift; sourceTree = "<group>"; };
+		82D6EAB727DF9AA800BD138E /* RootViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewTests.swift; sourceTree = "<group>"; };
+		82D6EAB827DF9AA800BD138E /* EmptyListViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyListViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82D6EAC127DF9B8400BD138E /* ViewInspector in Frameworks */,
+				82D6EACD27DF9E2F00BD138E /* OHHTTPStubsSwift in Frameworks */,
+				82D6EACB27DF9E2F00BD138E /* OHHTTPStubs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +145,7 @@
 				82B890F927DE748000DB9E46 /* Netwoking */,
 				82B890FB27DE749600DB9E46 /* UI */,
 				82B890FA27DE748900DB9E46 /* ViewModels */,
+				82D6EAAB27DF9A7B00BD138E /* Stubs */,
 			);
 			path = ChuckJokesTests;
 			sourceTree = "<group>";
@@ -152,6 +175,7 @@
 		82B890F927DE748000DB9E46 /* Netwoking */ = {
 			isa = PBXGroup;
 			children = (
+				82D6EAB427DF9A9F00BD138E /* APITests.swift */,
 			);
 			path = Netwoking;
 			sourceTree = "<group>";
@@ -159,6 +183,8 @@
 		82B890FA27DE748900DB9E46 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				82D6EAB127DF9A9700BD138E /* JokeViewModelTests.swift */,
+				82D6EAB027DF9A9700BD138E /* RootViewModelTests.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -166,6 +192,9 @@
 		82B890FB27DE749600DB9E46 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				82D6EAB827DF9AA800BD138E /* EmptyListViewTests.swift */,
+				82D6EAB627DF9AA800BD138E /* FetchingListViewTests.swift */,
+				82D6EAB727DF9AA800BD138E /* RootViewTests.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -205,6 +234,15 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
+		82D6EAAB27DF9A7B00BD138E /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				82D6EAAC27DF9A8A00BD138E /* Jokes.json */,
+				82D6EAAD27DF9A8A00BD138E /* TwoExplicitJokes.json */,
+			);
+			name = Stubs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -221,6 +259,8 @@
 			dependencies = (
 			);
 			name = ChuckJokes;
+			packageProductDependencies = (
+			);
 			productName = ChuckJokes;
 			productReference = 82B890CA27DE648100DB9E46 /* ChuckJokes.app */;
 			productType = "com.apple.product-type.application";
@@ -239,6 +279,11 @@
 				82B890DC27DE648300DB9E46 /* PBXTargetDependency */,
 			);
 			name = ChuckJokesTests;
+			packageProductDependencies = (
+				82D6EAC027DF9B8400BD138E /* ViewInspector */,
+				82D6EACA27DF9E2F00BD138E /* OHHTTPStubs */,
+				82D6EACC27DF9E2F00BD138E /* OHHTTPStubsSwift */,
+			);
 			productName = ChuckJokesTests;
 			productReference = 82B890DA27DE648300DB9E46 /* ChuckJokesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -258,6 +303,7 @@
 					};
 					82B890D927DE648300DB9E46 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = 82B890C927DE648100DB9E46;
 					};
 				};
@@ -271,6 +317,10 @@
 				Base,
 			);
 			mainGroup = 82B890C127DE648100DB9E46;
+			packageReferences = (
+				82D6EABF27DF9B8400BD138E /* XCRemoteSwiftPackageReference "ViewInspector" */,
+				82D6EAC927DF9E2F00BD138E /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
+			);
 			productRefGroup = 82B890CB27DE648100DB9E46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -295,6 +345,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82D6EAAE27DF9A8A00BD138E /* Jokes.json in Resources */,
+				82D6EAAF27DF9A8A00BD138E /* TwoExplicitJokes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +379,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82D6EAB927DF9AA800BD138E /* FetchingListViewTests.swift in Sources */,
+				82D6EAB227DF9A9700BD138E /* RootViewModelTests.swift in Sources */,
+				82D6EABA27DF9AA800BD138E /* RootViewTests.swift in Sources */,
+				82D6EAB327DF9A9700BD138E /* JokeViewModelTests.swift in Sources */,
+				82D6EABB27DF9AA800BD138E /* EmptyListViewTests.swift in Sources */,
+				82D6EAB527DF9A9F00BD138E /* APITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,15 +578,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6D2849K6LE;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = doyleProductions.ChuckJokesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChuckJokes.app/ChuckJokes";
@@ -540,11 +605,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6D2849K6LE;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = doyleProductions.ChuckJokesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -586,6 +657,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82D6EABF27DF9B8400BD138E /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		82D6EAC927DF9E2F00BD138E /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82D6EAC027DF9B8400BD138E /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82D6EABF27DF9B8400BD138E /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+		82D6EACA27DF9E2F00BD138E /* OHHTTPStubs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82D6EAC927DF9E2F00BD138E /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubs;
+		};
+		82D6EACC27DF9E2F00BD138E /* OHHTTPStubsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82D6EAC927DF9E2F00BD138E /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubsSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 82B890C227DE648100DB9E46 /* Project object */;
 }

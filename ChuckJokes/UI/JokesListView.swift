@@ -10,12 +10,12 @@ import SwiftUI
 
 struct  JokesListView : View {
     
-    var viewModel: RootViewModel
+    @ObservedObject var viewModel: RootViewModel
     
     var body: some View {
         
         Text("Your Jokes :)").font(.title).padding()
- 
+        Text("refresh list for more jokes").foregroundColor(.gray).font(.system(size: 10))
         List {
             ForEach(viewModel.jokes) {
                 jokeVM in

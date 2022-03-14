@@ -10,7 +10,7 @@ import Foundation
 enum JokesListState {
     
     case empty
-    case fetching
+    case fetchNew
     case presenting
     
 }
